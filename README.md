@@ -1,4 +1,4 @@
-#Simple video background tutorial  
+# Simple video background tutorial  
 This is a simple boilerplate in basic HTML/CSS to demonstrate how to implement a full screen video for a document/window background.  
 
 This style of implementing videos as a window background is becoming increasingly popular due to its visual appeal and cross-platform availability. Some excellent examples:  
@@ -10,7 +10,7 @@ This style of implementing videos as a window background is becoming increasingl
 We will require the special elements `video` and `source`. These will in turn hold, you guessed it, attributes to set the video source and to play the video. We will end up with a template resembling something like this:  
 
 ```html
-<video autoplay loop id="bgvid">
+<video autoplay loop>
   <source src="yourfile.webm" type="video/webm">
 </video>
 ```  
@@ -26,11 +26,29 @@ It is important to note that the best practice for production is to encode your 
 <source src="yourfile.mp4" type="video/mp4">
 <source src="yourfile.ogg" type="video/ogg">
 ```  
+
 [More on HTML media formats](https://developer.mozilla.org/en-US/docs/Web/HTML/Supported_media_formats).
 
-#test  
+The `video` element that will contain the video will need two additional attributes, either an `id` or `class`, preferably an `id` as there will be no additional background video elements.  
 
-<video autoplay loop poster="first-frame.jpg" id="bgvid">
+Lastly, we will want to capture a still image from the first frame of our video to act as a `poster`, or placeholder to immediately load with the page. This is a great little trick that keeps the UX fast and clean. The final HTML should resemble:  
+
+```html
+<video autoplay loop poster="first-frame.png" id="bg-video">
   <source src="wow.webm" type="video/webm">
   <source src="wow.mp4" type="video/mp4">
 </video>
+```
+
+## The CSS
+
+Since we have an `id` in place for our video element, we can then begin to create the video as a window-sized overlay. Let's also ensure that our first-frame image loads as the background.  
+
+```css
+video#bg-video {
+  background: url(first-frame.png) no-repeat;
+  background-size: cover;
+}
+```
+
+The next few steps are the most complicated part in this entire process
