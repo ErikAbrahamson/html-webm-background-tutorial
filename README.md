@@ -1,9 +1,9 @@
 # Simple video background tutorial  
-This is a simple boilerplate in basic HTML/CSS to demonstrate how to implement a full screen video for a document/window background.  
+This is a simple boilerplate in basic HTML/CSS to demonstrate how to implement a full screen video for a document window background.  
 
 This style of implementing videos as a window background is becoming increasingly popular due to its visual appeal and cross-platform availability. Some excellent examples:  
 
-[Dadaab Stores](http://www.dadaabstories.org/), [ONY Agency](http://en.ony.ru/), [Drexel University](http://www.getgoingtoday.org/curious), [BKWLD](http://www.bkwld.com/), [Mahedine Yahia, Portfolio](http://www.mahedineyahia.fr/)
+[Periscope](https://www.periscope.tv/), [ONY Agency](http://en.ony.ru/), [Drexel University](http://www.getgoingtoday.org/curious), [BKWLD](http://www.bkwld.com/), [Mahedine Yahia, Portfolio](http://www.mahedineyahia.fr/)
 
 
 ## The HTML  
