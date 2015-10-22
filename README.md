@@ -3,7 +3,7 @@ This is a simple boilerplate in basic HTML/CSS to demonstrate how to implement a
 
 This style of implementing videos as a window background is becoming increasingly popular due to its visual appeal and cross-platform availability. Some excellent examples:  
 
-[Dadaab Stores](http://www.dadaabstories.org/), [Matter Design](http://www.matter.to/), [Drexel University](http://www.getgoingtoday.org/curious)  
+[Dadaab Stores](http://www.dadaabstories.org/), [ONY Agency](http://en.ony.ru/), [Drexel University](http://www.getgoingtoday.org/curious), [BKWLD](http://www.bkwld.com/), [Mahedine Yahia, Portfolio](http://www.mahedineyahia.fr/)
 
 
 ## The HTML  
@@ -31,7 +31,7 @@ It is important to note that the best practice for production is to encode your 
 
 [More on HTML media formats](https://developer.mozilla.org/en-US/docs/Web/HTML/Supported_media_formats).
 
-The `video` element that will contain the video will need two additional attributes, either an `id` or `class`, preferably an `id` as there will be no additional background video elements.  
+The `video` element that will contain the video will need two additional attributes, either an `id` or `class`. For this example we will use an `id` as this will be the only instance of this video element.
 
 Lastly, we will want to capture a still image from the first frame of our video to act as a `poster`, or placeholder to immediately load with the page. This is a great little trick that keeps the UX fast and clean. The final HTML should resemble:  
 
