@@ -53,4 +53,29 @@ video#bg-video {
 }
 ```
 
-The next few steps are the most complicated part in this entire process. The goal is to contain the video to the browser window size. By doing so the background remains fixed as any basic background would (any white space or unnecessary scrolling will defeat the purpose of this).
+The next few steps are the most complicated part in this entire process. The goal is to contain the video to the browser window size. By doing so the background remains fixed as any basic background would (any white space or unnecessary scrolling will defeat the purpose of this).  
+
+Start by declaring the element's initial position, staring from the top left. Then keep the element in position with setting it to either fixed or absolute.    
+
+```css
+video#bg-video {
+  background: url(first-frame.png) no-repeat;
+  background-size: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+```  
+
+Finally, set the minimum width and height to be 100% of the video itself. Then set the element's width and height to auto to scale the video to the window.  
+
+```css
+video#bg-video {
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1;
+  overflow: hidden;
+}
+```

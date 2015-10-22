@@ -2,16 +2,14 @@ video#bg-video {
   background: url(first-frame.png) no-repeat;
   background-size: cover;
   position: fixed;
-  top: 50%;
-  left: 50%;
+  top: 0;
+  left: 0;
   min-width: 100%;
   min-height: 100%;
   width: auto;
   height: auto;
-  z-index: -100;
-  -webkit-transform: translateX(-50%) translateY(-50%);
-     -moz-transform: translateX(-50%) translateY(-50%);
-          transform: translateX(-50%) translateY(-50%);
+  z-index: -1;
+  overflow: hidden;
 }
 span {
   font-size: 6em;
