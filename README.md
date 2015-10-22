@@ -67,10 +67,15 @@ video#bg-video {
 }
 ```  
 
-Finally, set the minimum width and height to be 100% of the video itself. Then set the element's width and height to auto to scale the video to the window.  
+Finally, set the minimum width and height to be 100% of the video itself. Then set the element's width and height to auto to scale the video to the window. The final code will look something like this:  
 
 ```css
 video#bg-video {
+  background: url(first-frame.png) no-repeat;
+  background-size: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
   min-width: 100%;
   min-height: 100%;
   width: auto;
