@@ -19,7 +19,14 @@ We need the attributes `autoplay` and `loop` to both instantiate the video on th
 
 While HTML5 allows you to embed a multitude of video filetypes into your html document, using a compressed, lossy format is the best choice for building a video background as it will dramatically minimize latency & page load speed, as well as keep your project asset size to a minimum. *WebM* is currently one of the most reliable video codec that natively stands up to the most popular browsers.
 
-It is important to note that the best practice for working against different browser capabilities is to encode your video into several filetypes and include them as additional sources, i.e. *ogg* and *mp4*. [More on HTML media formats](https://developer.mozilla.org/en-US/docs/Web/HTML/Supported_media_formats).
+It is important to note that the best practice for production is to encode your video into a multitude of accepted formats and include them as additional sources, i.e. *ogg* and *mp4*.  
+
+```html
+<source src="yourfile.webm" type="video/webm">
+<source src="yourfile.mp4" type="video/mp4">
+<source src="yourfile.ogg" type="video/ogg">
+```  
+[More on HTML media formats](https://developer.mozilla.org/en-US/docs/Web/HTML/Supported_media_formats).
 
 #test  
 
