@@ -83,4 +83,6 @@ video#bg-video {
   z-index: -1;
   overflow: hidden;
 }
-```
+```  
+
+Keep in mind that the above CSS is only for a complete background, however implementing this concept into any div or jumbotron is fairly simple.  
