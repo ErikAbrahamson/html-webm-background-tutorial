@@ -1,5 +1,5 @@
 video#bg-video {
-  background: url(first-frame.png) no-repeat;
+  background: url(../first-frame.png) no-repeat;
   background-size: cover;
   position: fixed;
   top: 0;
